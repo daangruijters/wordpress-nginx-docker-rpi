@@ -18,7 +18,7 @@ services:
     restart: always
 
   mysql:
-    image: mariadb:${MARIADB_VERSION:-latest}
+    image: hypriot/rpi-mysql:${MARIADB_VERSION:-latest}
     container_name: mysql
     volumes:
       - ./mysql:/var/lib/mysql

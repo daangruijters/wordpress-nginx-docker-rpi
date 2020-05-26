@@ -89,7 +89,7 @@ cd ${LE_DIR}
 docker run -it --rm \
     -v ${CERTS}:/etc/letsencrypt \
     -v ${CERTS_DATA}:/data/letsencrypt \
-    certbot/certbot \
+    raigen/rpi-alpine-certbot \
     certonly \
     --webroot --webroot-path=/data/letsencrypt \
     -d ${FQDN_OR_IP} -d www.${FQDN_OR_IP}
