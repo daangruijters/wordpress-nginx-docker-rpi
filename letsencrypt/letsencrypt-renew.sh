@@ -44,7 +44,7 @@ fi
 docker run -t --rm \
     -v ${CERTS}:/etc/letsencrypt \
     -v ${CERTS_DATA}:/data/letsencrypt \
-    certbot/certbot \
+    tobi312/rpi-certbot \
     renew \
     --webroot --webroot-path=/data/letsencrypt
 
